@@ -45,6 +45,7 @@ dockergitclean:
 
 .PHONY: deps
 deps:
+	$(GO) get -d github.com/cockroachdb/cockroach-go/testserver
 	$(GO) get -d -t ./...
 	$(MAKE) deps -C ./java/hibernate
 	$(MAKE) deps -C ./node/sequelize

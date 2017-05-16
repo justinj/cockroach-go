@@ -13,6 +13,7 @@ To run automated testing against all ORMs using the latest binary of CockroachDB
 simply run:
 
 ```
+make deps
 make test
 ```
 
